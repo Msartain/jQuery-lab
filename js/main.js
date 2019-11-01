@@ -14,5 +14,5 @@ $(document).on('dblclick', 'li', function(){
 //clear input field on clicking back in box
 
 $('input').focus(function(){
-    $(this).val('');
+    $('input').val('');
 });
