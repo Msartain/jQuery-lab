@@ -5,8 +5,14 @@
         $('#list').append('<li>' + skillsList +'</li>');
     });
 
-// on click of the remove box, delete that item from the list.
+// on click of the remove box (of the skill), delete that item from the list.
 
 $(document).on('dblclick', 'li', function(){
     $(this).fadeOut('slow');
+});
+
+//clear input field on clicking back in box
+
+$('input').focus(function(){
+    $(this).val('');
 });
